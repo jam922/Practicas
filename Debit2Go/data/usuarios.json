@@ -1,0 +1,13 @@
+[
+    {
+        "id": "5765d958-2ef9-4ba3-b969-dccb66284046",
+        "rol": "CLIENTE",
+        "fechaCreacion": "2021-01-11 21:58:00",
+        "fechaModificacion": "2021-01-11 21:58:00",
+        "correo": "daniel.arenillas+s1@sstrategy.io",
+        "prefijoTelefono": "+34",
+        "telefono": "654654654",
+        "nombre": "daniel",
+        "apellidos": "arenillas"
+    }
+]    

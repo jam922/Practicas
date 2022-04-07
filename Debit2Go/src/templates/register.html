@@ -1,0 +1,66 @@
+{% extends './base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block customCSS %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-5"></div>
+        <div class="col-4">
+            <img id="centro"src="http://d2gmp-pre-load-balancer-6638085.eu-west-3.elb.amazonaws.com/app/empresa/img/login-empresa.png?v=0.0.16">
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-5">
+            <h1 id="titulo">Bienvenido de nuevo :)</h1>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-7">
+            <h2 id="texto">Accede y empieza a crear nuevos planes en<br>cuestión de minutos</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-7">
+            <div class="row">
+                <div class="col-12">
+                    <form action="{{ url_for('register') }}" method="POST">
+                        <h5>Correo electrónico*:</h5>
+                        <input type="text" id="username" name="username" required>
+                        <br><br>
+                        <h5>Nombre*:</h5>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <br><br>
+                        <h5>Apellidos*:</h5>
+                        <input type="text" name="apellidos" id="apellidos" required>
+                        <br><br>
+                        <h5>Teléfono*:</h5>
+                        <input list="telefono" name="prefijo" id="prefijo" required>
+                        <datalist id="prefijo">
+                            <option value="+34">
+                        </datalist>
+                        <input name="telefono" id="telefono" placeholder="Introduzca su numero" required>
+                        <br><br>
+                        <h5>Contraseña*:</h5>
+                        <input type="password" id="password" name="password" required>
+                        <br><br>
+                        <button type="submit" id="enviar">Crear cuenta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

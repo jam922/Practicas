@@ -1,0 +1,56 @@
+body{
+    background-color: #F5F5F5;
+    width: 99.1%;
+}
+#abajo,#texto,h5{
+    color:#707070;
+    font-weight: 100;
+}
+#derecha{
+    text-align: left;
+    background-color: #00FFFF;
+}
+#centro{
+   align: center;
+}
+#texto,#titulo{
+    text-align: center;
+}
+#titulo{
+    color: #707070
+}
+#username,#password,#enviar,#nombre,#apellidos,#enviar2{
+    width:70%;
+    border:0;
+    height: 40px;
+    border-radius: 5px;
+}
+#telefono {
+    width:50%;
+    border:0;
+    height: 40px;
+    border-radius: 5px;  
+}
+#prefijo {
+    width:20%;
+    border:0;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow:0 3px 0 #BEBEBE; 
+}
+#username,#password,#nombre,#apellidos,#telefono{
+    box-shadow:0 3px 0 #BEBEBE;
+}
+#enviar{
+    background-color: #0E5FB0;
+    color:white
+}
+#enviar2{
+    background-color: white;
+    color:#0E5FB0;
+    box-shadow:0 3px 0 #979797;
+}
+a{
+    text-decoration: none;
+    align-items: center;
+}
